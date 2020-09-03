@@ -18,7 +18,7 @@ from Qt.QtWidgets import *
 import tpDcc as tp
 from tpDcc.libs.python import decorators, mathlib
 from tpDcc.libs.qt.core import base
-from tpDcc.libs.qt.widgets import splitters, sliders
+from tpDcc.libs.qt.widgets import dividers, sliders
 
 if tp.is_maya():
     from tpDcc.dccs.maya.core import decorators as maya_decorators
@@ -111,18 +111,18 @@ class SymMeshWidget(base.BaseWidget, object):
 
         self.main_layout.addLayout(top_layout)
         self.main_layout.addLayout(options_cbx_layout)
-        self.main_layout.addLayout(splitters.SplitterLayout())
+        self.main_layout.addLayout(dividers.DividerLayout())
         self.main_layout.addLayout(select_geo_layout)
-        self.main_layout.addLayout(splitters.SplitterLayout())
+        self.main_layout.addLayout(dividers.DividerLayout())
         self.main_layout.addWidget(self._check_symmetry_btn)
-        self.main_layout.addLayout(splitters.SplitterLayout())
+        self.main_layout.addLayout(dividers.DividerLayout())
         self.main_layout.addWidget(self._check_symmetry_btn)
         self.main_layout.addWidget(self._selection_mirror_btn)
         self.main_layout.addWidget(self._select_moved_verts_btn)
-        self.main_layout.addLayout(splitters.SplitterLayout())
+        self.main_layout.addLayout(dividers.DividerLayout())
         self.main_layout.addWidget(self._mirror_selected_btn)
         self.main_layout.addWidget(self._flip_selected_btn)
-        self.main_layout.addLayout(splitters.SplitterLayout())
+        self.main_layout.addLayout(dividers.DividerLayout())
         self.main_layout.addWidget(self._revert_selected_to_base)
         self.main_layout.addWidget(self._revert_slider)
 

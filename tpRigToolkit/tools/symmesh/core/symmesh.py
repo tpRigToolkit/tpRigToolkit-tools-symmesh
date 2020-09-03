@@ -20,9 +20,6 @@ from tpDcc.libs.qt.widgets import toolset
 # Defines ID of the tool
 TOOL_ID = 'tpRigToolkit-tools-symmesh'
 
-# We skip the reloading of this module when launching the tool
-no_reload = True
-
 
 class SymMeshTool(tool.DccTool, object):
     def __init__(self, *args, **kwargs):
