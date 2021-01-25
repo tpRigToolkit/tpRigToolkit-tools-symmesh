@@ -257,6 +257,8 @@ class SymmeshServer(server.DccServer, object):
             if mirror_vertices:
                 dcc.select_node(mirror_vertices)
 
+            reply['success'] = True
+
         except Exception as exc:
             logger.error('Error while selecting mirror: {} | {}'.format(exc, traceback.format_exc()))
             reply['success'] = False
