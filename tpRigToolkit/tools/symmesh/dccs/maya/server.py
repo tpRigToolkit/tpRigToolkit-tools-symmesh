@@ -222,7 +222,9 @@ class SymmeshServer(server.DccServer, object):
                     moved_vertices.append(vtx)
 
             if len(moved_vertices) > 0:
-                dcc.select_node(moved_vertices)
+                dcc.select_node(obj)
+                dcc.enable_component_selection()
+                dcc.select_node(moved_vertices, replace_selection=False)
 
             reply['success'] = True
 
