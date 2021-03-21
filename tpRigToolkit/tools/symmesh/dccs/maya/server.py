@@ -392,7 +392,7 @@ class SymmeshServer(server.DccServer, object):
                 pos_verts_int = neg_verts_int
 
             if show_progress:
-                mod = math.ceil(len(pos_verts_int)/50)
+                mod = math.ceil(len(pos_verts_int) / 50)
 
             for i in range(len(pos_verts_int)):
                 if show_progress:

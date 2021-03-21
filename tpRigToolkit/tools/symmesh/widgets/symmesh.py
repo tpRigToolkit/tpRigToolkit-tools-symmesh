@@ -17,12 +17,13 @@ from tpDcc.dcc import progressbar
 from tpDcc.libs.python import mathlib
 from tpDcc.libs.qt.core import base
 
+from tpRigToolkit.tools.symmesh.core import consts
 
-LOGGER = logging.getLogger('tpRigToolkit-tools-symmesh')
+
+logger = logging.getLogger(consts.TOOL_ID)
 
 
 class SymMeshWidget(base.BaseWidget, object):
-
 
     @dcc.undo_decorator()
     def revert_selected_to_base(self, obj, base_obj, selected_verts, bias):
@@ -65,7 +66,7 @@ class SymMeshWidget(base.BaseWidget, object):
                         base_trans.z + (obj_trans.z - base_trans.z) * bias,
                     ])
         except Exception as exc:
-            LOGGER.error('Error while reverting vertices: {} | {}'.format(exc, traceback.format_exc()))
+            logger.error('Error while reverting vertices: {} | {}'.format(exc, traceback.format_exc()))
         finally:
             dcc.disable_wait_cursor()
             if show_progress:

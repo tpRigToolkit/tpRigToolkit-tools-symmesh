@@ -171,4 +171,3 @@ class SymmeshController(object):
         self._model.alt_base_geo = ''
         self._model.symmetry_table = list()
         self._model.is_symmetric = False
-
