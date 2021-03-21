@@ -1,0 +1,7 @@
+tpRigToolkit.tools.symmesh.dccs.maya.server module
+==================================================
+
+.. automodule:: tpRigToolkit.tools.symmesh.dccs.maya.server
+   :members:
+   :undoc-members:
+   :show-inheritance:

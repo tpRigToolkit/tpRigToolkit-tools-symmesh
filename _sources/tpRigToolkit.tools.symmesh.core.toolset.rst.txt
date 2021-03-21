@@ -1,0 +1,7 @@
+tpRigToolkit.tools.symmesh.core.toolset module
+==============================================
+
+.. automodule:: tpRigToolkit.tools.symmesh.core.toolset
+   :members:
+   :undoc-members:
+   :show-inheritance:

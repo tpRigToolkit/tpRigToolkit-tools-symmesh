@@ -1,0 +1,18 @@
+tpRigToolkit.tools.symmesh.dccs package
+=======================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tpRigToolkit.tools.symmesh.dccs.maya
+
+Module contents
+---------------
+
+.. automodule:: tpRigToolkit.tools.symmesh.dccs
+   :members:
+   :undoc-members:
+   :show-inheritance:

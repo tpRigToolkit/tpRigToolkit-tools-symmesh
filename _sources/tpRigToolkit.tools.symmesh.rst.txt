@@ -1,0 +1,20 @@
+tpRigToolkit.tools.symmesh package
+==================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tpRigToolkit.tools.symmesh.core
+   tpRigToolkit.tools.symmesh.dccs
+   tpRigToolkit.tools.symmesh.widgets
+
+Module contents
+---------------
+
+.. automodule:: tpRigToolkit.tools.symmesh
+   :members:
+   :undoc-members:
+   :show-inheritance:
